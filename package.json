@@ -1,0 +1,29 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start":"nodemon --inspect app.js ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DatWithTheWorld/Nodejs-Practice.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "datnd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DatWithTheWorld/Nodejs-Practice/issues"
+  },
+  "homepage": "https://github.com/DatWithTheWorld/Nodejs-Practice#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
