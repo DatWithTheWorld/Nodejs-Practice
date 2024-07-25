@@ -1,11 +1,16 @@
-class SiteController {
-   home(req, res) {
-      res.render('home');
-   }
+const Course = require("../models/Course");
 
-   search(req, res) {
-      res.render('search');
-   }
+class SiteController {
+  home(req, res, next) {
+    Course.find({})
+      .lean()
+      .then((courses) => res.render("home", { courses }))
+      .catch(next);
+  }
+
+  search(req, res) {
+    res.render("search");
+  }
 }
 
 module.exports = new SiteController();

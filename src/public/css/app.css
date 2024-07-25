@@ -1,3 +1,6 @@
 h1 {
   font-size: 1rem;
   background-color: pink; }
+
+.card-course-item {
+  margin-top: 16px; }
